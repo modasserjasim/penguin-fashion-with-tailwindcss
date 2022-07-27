@@ -1,12 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Penguin Fashion</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Penguin Fashion</title>
+  <!-- Tailwindcss CDN  -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </head>
+
 <body>
+  <section>
     
+  </section>
+  <header class="bg-orange-50">
+    <div class="container px-4 mx-auto">
+      <nav class="flex justify-between items-center py-8 mx-auto">
+        <div>
+          <img class="w-64 sm:w-80" src="/images/logo.png" alt="Logo">
+        </div>
+        <div class="hidden space-x-10 lg:flex">
+          <a href="#">Home</a>
+          <a href="#">Products</a>
+          <a href="#">About us</a>
+          <a href="#">Contact us</a>
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+          </svg></a>
+        </div>
+        <div class="flex lg:hidden">
+          <div class="space-y-2">
+            <span class="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+            <span class="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+            <span class="block w-8 h-0.5 bg-gray-600 animate-pulse"></span>
+          </div>
+        </div>
+      </nav>
+      <!-- hero section start  -->
+      <div class="hero sm:flex justify-between items-center pt-5 pb-24 gap-x-8">
+        <div>
+          <h1 class="text-7xl uppercase font-bold leading-11"><span class="text-[#FABE4C]">Be the Penguins</span> <br>
+            of Winter</h1>
+          <p class="py-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          <button class="bg-[#85A019] text-white py-5 px-16 text-xl rounded-xl">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 inline" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+            BUY NOW</button>
+        </div>
+        <div>
+          <img class="sm:w-full" src="images/model.png" alt="Model">
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Women Jacket product section start  -->
+  <section>
+    <div class="container">
+
+    </div>
+  </section>
 </body>
+
 </html>
